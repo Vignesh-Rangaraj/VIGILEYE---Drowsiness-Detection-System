@@ -1,13 +1,13 @@
-
-EYE-DET – Drowsiness Detection System
--------------------------------------
+VIGILEYE – Drowsiness Detection System
+--------------------------------------
 
 A Python and OpenCV based real-time system for detecting eye closure, blinking patterns, and drowsiness using facial landmark analysis and Eye Aspect Ratio (EAR).
 
 -------------------------------------
 PROJECT OVERVIEW
 -------------------------------------
-EYE-DET monitors a user's eye activity through a webcam or video feed. It detects when the user is becoming drowsy by analyzing the eye aspect ratio over consecutive frames. If the eyes remain closed beyond a threshold, the system identifies drowsiness and triggers an alert.
+VIGILEYE monitors a user's eye activity through a webcam or video feed. It detects when the user is becoming drowsy by analyzing the eye aspect ratio over consecutive frames. 
+If the eyes remain closed beyond a threshold, the system identifies drowsiness and triggers an alert.
 
 -------------------------------------
 FEATURES
@@ -17,7 +17,7 @@ FEATURES
 - Drowsiness detection using EAR logic
 - Works with webcam, image, or video
 - Lightweight and easy to run
-- Highly configurable threshold values
+- Highly configurable thresholds and parameters
 
 -------------------------------------
 HOW IT WORKS
@@ -29,11 +29,11 @@ EAR = (||p2 - p6|| + ||p3 - p5||) / (2 * ||p1 - p4||)
 
 Where p1 to p6 represent key eye landmark points.
 
-Logic:
+Detection Logic:
 - If EAR < 0.25 → Eyes Closed
-- If EAR < 0.25 for 20+ frames → Drowsiness Detected
+- If EAR < 0.25 for 20+ consecutive frames → Drowsiness Detected
 
-You can adjust threshold and frame count based on environment and camera quality.
+Threshold values can be adjusted depending on lighting, distance, and camera quality.
 
 -------------------------------------
 TECH STACK
@@ -48,7 +48,7 @@ TECH STACK
 -------------------------------------
 PROJECT STRUCTURE
 -------------------------------------
-EYE-DET/
+VIGILEYE-DROWSINESS-DETECTION/
   public/
     basic.py        - Basic eye detection script
     new.py          - Main drowsiness detection system
@@ -62,8 +62,8 @@ EYE-DET/
 INSTALLATION
 -------------------------------------
 1. Clone the repository:
-   git clone https://github.com/Vignesh-Rangaraj/EYE-DET.git
-   cd EYE-DET
+   git clone https://github.com/Vignesh-Rangaraj/VIGILEYE-Drowsiness-Detection.git
+   cd VIGILEYE-Drowsiness-Detection
 
 2. Install dependencies:
    pip install -r requirements.txt
@@ -106,7 +106,7 @@ FUTURE ENHANCEMENTS
 AUTHOR
 -------------------------------------
 Developed by: Vignesh Rangaraj
-GitHub Repo: https://github.com/Vignesh-Rangaraj/EYE-DET
+GitHub Repo: https://github.com/Vignesh-Rangaraj/VIGILEYE-Drowsiness-Detection-System
 
 -------------------------------------
 LICENSE
