@@ -106,8 +106,8 @@ FUTURE ENHANCEMENTS
 AUTHOR
 -------------------------------------
 Developed by: Vignesh Rangaraj
-GitHub Repo: https://github.com/Vignesh-Rangaraj/VIGILEYE-Drowsiness-Detection-System.git
-
+GitHub Repo:[ https://github.com/Vignesh-Rangaraj/VIGILEYE-Drowsiness-Detection-System.git
+](https://github.com/Vignesh-Rangaraj/VIGILEYE---Drowsiness-Detection-System.git)
 -------------------------------------
 LICENSE
 -------------------------------------
